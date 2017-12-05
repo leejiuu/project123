@@ -1,14 +1,20 @@
 doctype html
 html
   head
-    title eventbrite
+    title MJ Overflow
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
     script(src='https://code.jquery.com/jquery-3.2.1.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous')
+
+  
   body
     block top-nav
       include ./includes/topnav
@@ -22,251 +28,9 @@ html
             button.close(type='button', data-dismiss='alert', aria-label='close')
               span(aria-hidden='true') &times;
     block content
-    
-    html
-  body
-    .bg
-    #main
-      #free
-        .con_tainer
-          .card.text-center
-            .card-body
-              h2.card-title Find your next experience
-              form.form-inline(action='/action_page.php')
-                .form-group
-                  input#gr1.form-control(type='gr1', placeholder='search events or categories ')
-                .form-group
-                  input#gr2.form-control(type='gr2', placeholder=' Bucheon-si, Republic of Korea')
-                .form-group
-                  .dropdown
-                    button.form-control(data-toggle='dropdown')
-                      | All Dates
-                      span.caret
-                    ul.dropdown-menu
-                      li
-                        a(href='#') today
-                      li
-                        a(href='#') tomorrow
-                      li
-                        a(href='#') this week
-                      li
-                        a(href='#') this weekend
-                      li
-                        a(href='#') next week
-                      li
-                        a(href='#') next month
-                button.btnnn SEARCH
-      .alert.alert-secondary(role='alert')
-        | Popular Events in 
-        a.alert-link(href='#')  Seoul, Republic of Korea
-      .contents
-        .main_bn
-          .box_img
-            img(src='bn1.png', alt='첫 번째 사진 배너')
-          .box_text
-            p
-              | SAT.OCT 21 7:00 PM
-              br
-              | Grease, School Edition - October 21, 2017 tickets
-            p.btnn Seoul Foreign School | 서울 외국인학교 
-          .box_text_bt
-            .box_text_bt1
-              a.bt1-1 #Arts
-              a.bt1-2 #Performance
-        .main_bn2
-          .box_img
-            img(src='bn2.jpg', alt='두 번째 사진 배너')
-          .box_text
-            p
-              | SAT.OCT 21 7:00 PM
-              br
-              | Grease, School Edition - October 21, 2017 tickets
-            p.btnn Seoul Foreign School | 서울 외국인학교 
-          .box_text_bt
-            .box_text_bt1
-              a.bt1-1 #Arts
-              a.bt1-2 #Performance
-        .main_bn3
-          .box_img
-            img(src='bn3.jpg', alt='세 번째 사진 배너')
-          .box_text
-            p
-              | SAT.OCT 21 7:00 PM
-              br
-              | Grease, School Edition - October 21, 2017 tickets
-            p.btnn Seoul Foreign School | 서울 외국인학교 
-          .box_text_bt
-            .box_text_bt1
-              a.bt1-1 #Arts
-              a.bt1-2 #Performance
-      .contents2
-        .main_bn
-          .box_img
-            img(src='bn4.jpg', alt='네 번째 사진 배너')
-          .box_text
-            p
-              | SAT.OCT 21 7:00 PM
-              br
-              | Grease, School Edition - October 21, 2017 tickets
-            p.btnn Seoul Foreign School | 서울 외국인학교 
-          .box_text_bt
-            .box_text_bt1
-              a.bt1-1 #Arts
-              a.bt1-2 #Performance
-        .main_bn2
-          .box_img
-            img(src='bn5.png', alt='다섯 번째 사진 배너')
-          .box_text
-            p
-              | SAT.OCT 21 7:00 PM
-              br
-              | Grease, School Edition - October 21, 2017 tickets
-            p.btnn Seoul Foreign School | 서울 외국인학교 
-          .box_text_bt
-            .box_text_bt1
-              a.bt1-1 #Arts
-              a.bt1-2 #Performance
-      .main_bn3
-        .box_img
-          img(src='bn6.jpg', alt='여섯 번째 사진 배너')
-        .box_text
-          p
-            | SAT.OCT 21 7:00 PM
-            br
-            | Grease, School Edition - October 21, 2017 tickets
-          p.btnn Seoul Foreign School | 서울 외국인학교 
-        .box_text_bt
-          .box_text_bt1
-            a.bt1-1 #Arts
-            a.bt1-2 #Performance
-    .tx
-      button.btn.btn-primary.btn-md(type='button') SEE MORE
-      br
-      h2 Browse by Top Categories
-    .con_2
-      .con_2_1
-        div
-          p Music
-        div
-          p food&drink
-      .con_2_2
-        div
-          p classes
-        div
-          p Arts
-        div
-          p Parties
-      .con_2_3
-        div
-          p Sports&Wellness
-        div
-          p Networking
-    .row
-      .g
-        ul
-          li
-            h5 Use Eventbrite
-            ul
-              li
-                a(href='#') How It Works
-              li
-                a(href='#') For Large & Complex Events
-              li
-                a(href='#') Pricing
-              li
-                a(href='#') Community Guidelines
-              li
-                a(href='#') Eventbrite Mobile App
-              li
-                a(href='#') Eventbrite Check-In App
-              li
-                a(href='#') Online Event Registration
-          li
-      .gg
-        li
-          h5 Plan Events
-          ul
-            li
-              a(href='#') Conference Management Software
-            li
-              a(href='#') Reunions
-            li
-              a(href='#') Nonprofits & Fundraisers
-            li
-              a(href='#') Eventbrite Reviews
-            li
-              a(href='#') Sell Tickets
-            li
-              a(href='#') Event Management & Planning
-            li
-              a(href='#') Online Event Registration
-      .ggg
-        li
-          h5 Find Events
-          ul
-            li
-              a(href='#') Boston Events
-            li
-              a(href='#') Chicago Events
-            li
-              a(href='#') Denver Events
-            li
-              a(href='#') Houston Events
-            li
-              a(href='#') Los Angeles Events
-            li
-              a(href='#') Nashville Events
-            li
-              a(href='#') New York Events
-      .gggg
-        li
-          h5 Connect With Us
-          ul
-            li
-              a(href='#') Contact Support 
-            li
-              a(href='#') Contact Sales
-            li
-              a(href='#') Twitter  
-            li
-              a(href='#')  Facebook 
-            li
-              a(href='#')  LinkedIn
-            li
-              a(href='#') Instagram  
-            li
-              a(href='#') Google+
-      .col-sm-12
-        li
-          hr
-          h5 Country
-          ul
-            li
-              a(href='#') Argentina 
-              a(href='#')  Australia
-              a(href='#')  Brasil  
-              a(href='#')   Canada (EN) 
-              a(href='#')   Canada (FR) 
-              a(href='#')   Chile 
-              a(href='#')   Colombia 
-              a(href='#')    España
-              a(href='#')    France 
-              a(href='#')   Hong Kong
-            li
-              a(href='#') Ireland 
-              a(href='#')   Italia 
-              a(href='#')    Mexico 
-              a(href='#')  Nederland 
-              a(href='#')  New Zealand
-          hr
-      .col-sm-12
-        h5
-          | About   Blog   Help   Careers   Press   Security   Developers  Terms  Privacy  Cookies
-        hr
-      .copyright
-        p © 2017 Eventbrite
 
     block footer
       include ./includes/footer
+
 
 
