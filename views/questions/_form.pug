@@ -3,25 +3,25 @@ h3.title 1.Event Details
   label(for="title") Title
   input.form-control(type="text", name="title", placeholder="What is your event title?", value=question.title)
 .form-group
-  label(for="location") location  
-  input.form-control(type='text')
-.row
- label(for="date") STARTS
+  label(for="question") location  
+  input.form-control(type='text', name="eventlocation", value=question.eventlocation)
+ .row
+ label(for="question") STARTS
   .col  
-  input.form-control(type='date')
-  input.form-control(type='time')
-  label(for="date") ENDS
-  input.form-control(type='date')
-  input.form-control(type='time')
+  input.form-control(type='date', name="eventdate1", value=question.eventdate1)
+  input.form-control(type='time', name="eventtime1", value=eventtime1)
+  label(for="question") ENDS
+  input.form-control(type='date', name="eventdate2", value=question.eventdate2)
+  input.form-control(type='time', name="eventtime2", value=question.eventtime2)
 .form-group
   label(for="question") EVENT DESCRIPTION
-  textarea.form-control(name="content", rows="3")= question.content
+  textarea.form-control(name="content", rows="3", value=question.content)
 .form-group
-  label(for="organization") ORGANIZER NAME 
-  input.form-control(type='text')
+  label(for="question") ORGANIZER NAME 
+  input.form-control(type='text', name="orgname", value=question.orgname)
 .form-group
-  label(for="organization") ORGANIZER DESCRIPTION
-  textarea.form-control(name="content", rows="2")= question.content  
+  label(for="question") ORGANIZER DESCRIPTION
+  textarea.form-control(name="orgdes", rows="2", value=question.orgdes) 
 h3.title 2.Create Tickets
 .form-check.form-check-inline
   label.form-check-label
