@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
 body {
   font: 1rem 'Montserrat', sans-serif;
-  margin-top: 50px;
+  margin-top: 70px;
   padding-top: 1em; }
   body > .main-content {
     min-height: 400px; }
@@ -37,10 +37,10 @@ a:hover {
   color: #011a72; }
 
 .header > .navbar {
-  background-color: #ff8d58 !important; }
+  background-color: #ff8738 !important; }
 
 .navbar-brand {
-  color: #ff5e00; }
+  color: #ffffff; }
 
 .search-input-group {
   margin: 1em 0;

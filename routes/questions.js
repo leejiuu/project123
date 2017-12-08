@@ -69,8 +69,8 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   question.eventdate2 = req.body.eventdate2;
   question.eventtime2 = req.body.eventtime2;
   question.orgname = req.body.orgname;
-  question.orgdes = req.body.orgdes;
-
+  question.inlineRadioOptions = req.body.inlineRadioOptions;
+  question.price = req.body.price;
   question.tags = req.body.tags.split(" ").map(e => e.trim());
 
   await question.save();
