@@ -4,21 +4,24 @@ h3.title 1.Event Details
   input.form-control(type="text", name="title", placeholder="What is your event title?", value=question.title)
 .form-group
   label(for="question") location  
-  input.form-control(type='text', name="eventlocation", value=question.eventlocation)
- .row
- label(for="question") STARTS
-  .col  
-  input.form-control(type='date', name="eventdate1", value=question.eventdate1)
-  input.form-control(type='time', name="eventtime1", value=question.eventtime1)
-  label(for="question") ENDS
-  input.form-control(type='date', name="eventdate2", value=question.eventdate2)
-  input.form-control(type='time', name="eventtime2", value=question.eventtime2)
+  textarea.form-control(type='text', name="eventlocation", value=question.eventlocation)
+ .containor
+   .row
+    .col-md-6
+     .form-group
+      label(for="question") STARTS 
+      textarea.form-control(type='date', name="eventdate1", value=question.eventdate1)
+      textarea.form-control(type='time', name="eventtime1", value=question.eventtime1)
+      .col-md-6
+      label(for="question") ENDS
+      textarea.form-control(type='date', name="eventdate2", value=question.eventdate2)
+      textarea.form-control(type='time', name="eventtime2", value=question.eventtime2)
 .form-group
   label(for="question") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="3", value=question.content)
 .form-group
   label(for="question") ORGANIZER NAME 
-  input.form-control(type='text', name="orgname", value=question.orgname)
+  textarea.form-control(type='text', name="orgname", value=question.orgname)
 .form-group
   label(for="question") ORGANIZER DESCRIPTION
   textarea.form-control(name="orgdes", rows="2", value=question.orgdes) 
