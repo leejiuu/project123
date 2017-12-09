@@ -9,11 +9,11 @@ h3.title 1.Event Details
  .row
  label(for="question") STARTS 
   .col 
-  input.form-control(type='text', name='date_s', placeholder="Enter start date", value=question.date_s)
-  input.form-control(type='text', name='time_s', placeholder="Enter start time", value=question.time_s)
+  input.form-control(type='date', name='date_s', placeholder="Enter start date", value=question.date_s)
+  input.form-control(type='time', name='time_s', placeholder="Enter start time", value=question.time_s)
   label(for="question") ENDS
-  input.form-control(type='text', name='date_e', placeholder="Enter end date", value=question.date_e)
-  input.form-control(type='text', name='time_e', placeholder="Enter end time", value=question.time_e)
+  input.form-control(type='date', name='date_e', placeholder="Enter end date", value=question.date_e)
+  input.form-control(type='time', name='time_e', placeholder="Enter end time", value=question.time_e)
 .form-group
   label(for="question") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="3")= question.content
