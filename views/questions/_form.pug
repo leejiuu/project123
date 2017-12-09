@@ -4,22 +4,22 @@ h3.title 1.Event Details
   input.form-control(type="text", name="title", placeholder="What is your event title?", value=question.title)
 .form-group
   label(for="question") location  
-  input.form-control(type='text')
+  input.form-control(type='text', name="location",value=question.location)
 .container
  .row
- label(for="question") STARTS
+ label(for="question") STARTS 
   .col 
-  input.form-control(type='date')
-  input.form-control(type='time')
+  input.form-control(type='text', name='date_s', placeholder="Enter start date", value=question.date_s)
+  input.form-control(type='text', name='time_s', placeholder="Enter start time", value=question.time_s)
   label(for="question") ENDS
-  input.form-control(type='date')
-  input.form-control(type='time')
+  input.form-control(type='text', name='date_e', placeholder="Enter end date", value=question.date_e)
+  input.form-control(type='text', name='time_e', placeholder="Enter end time", value=question.time_e)
 .form-group
   label(for="question") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="3")= question.content
 .form-group
   label(for="question") ORGANIZER NAME 
-  input.form-control(type='text')
+  input.form-control(type='text', name="orgaizer_name", value=question.orgaizer_name)
 .form-group
   label(for="question") ORGANIZER DESCRIPTION
   textarea.form-control(name="content", rows="2")= question.content  
@@ -36,7 +36,7 @@ h3.title 2.Create Tickets
   label.sr-only(for='inlineFormInputGroup') price
   .input-group.mb-2.mb-sm-0
     .input-group-addon $
-    input#inlineFormInputGroup.form-control(type='text' placeholder='price')
+    input#inlineFormInputGroup.form-control(type='text' placeholder='Enter for charged event')
 h3.title 3.Additional Settings
 .form-group
   label(for='exampleFormControlSelect1') EVENT TYPE

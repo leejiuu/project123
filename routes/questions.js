@@ -63,13 +63,12 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   }
   question.title = req.body.title;
   question.content = req.body.content;
-  //question.eventlocation = req.body.eventlocation;
-  //question.eventdate1 = req.body.eventdate1;
-  //question.eventtime1 = req.body.eventtime1;
-  //question.eventdate2 = req.body.eventdate2;
-  //question.eventtime2 = req.body.eventtime2;
-  //question.orgname = req.body.orgname;
-  //question.inlineRadioOptions = req.body.inlineRadioOptions;
+  question.location = req.body.location;
+  question.date_s = req.body.date_s;
+  question.time_s = req.body.time_s;
+  question.date_e = req.body.date_e;
+  question.date_e = req.body.date_e;
+  question.orgaizer_name = req.body.orgaizer_name;
   //question.price = req.body.price;
   question.tags = req.body.tags.split(" ").map(e => e.trim());
 
