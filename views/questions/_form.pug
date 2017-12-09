@@ -3,24 +3,25 @@ h3.title 1.Event Details
   label(for="title") Title
   input.form-control(type="text", name="title", placeholder="What is your event title?", value=question.title)
 .form-group
-  label(for="location") location  
+  label(for="question") location  
   input.form-control(type='text')
-.row
- label(for="date") STARTS
-  .col  
+.container
+ .row
+ label(for="question") STARTS
+  .col 
   input.form-control(type='date')
   input.form-control(type='time')
-  label(for="date") ENDS
+  label(for="question") ENDS
   input.form-control(type='date')
   input.form-control(type='time')
 .form-group
   label(for="question") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="3")= question.content
 .form-group
-  label(for="organization") ORGANIZER NAME 
+  label(for="question") ORGANIZER NAME 
   input.form-control(type='text')
 .form-group
-  label(for="organization") ORGANIZER DESCRIPTION
+  label(for="question") ORGANIZER DESCRIPTION
   textarea.form-control(name="content", rows="2")= question.content  
 h3.title 2.Create Tickets
 .form-check.form-check-inline
