@@ -22,7 +22,7 @@ h3.title 1.Event Details
   input.form-control(type='text', name="orgaizer_name", value=question.orgaizer_name)
 .form-group
   label(for="question") ORGANIZER DESCRIPTION
-  textarea.form-control(name="content", rows="2")= question.content  
+  textarea.form-control(type='text', name="description", value=question.description)
 h3.title 2.Create Tickets
 .form-check.form-check-inline
   label.form-check-label

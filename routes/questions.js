@@ -69,7 +69,7 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   question.date_e = req.body.date_e;
   question.date_e = req.body.date_e;
   question.orgaizer_name = req.body.orgaizer_name;
-  //question.price = req.body.price;
+  question.description = req.body.description;
   question.tags = req.body.tags.split(" ").map(e => e.trim());
 
   await question.save();
